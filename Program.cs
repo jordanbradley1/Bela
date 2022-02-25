@@ -1,14 +1,20 @@
-﻿using System;
+// Team Juliet: Laura Warneke, Tyler Colon, Scott Hafetz, Nicole Donley, Jordan Bradley, Garrett Knobel 
+// Team Bela Problem 
 
-public class bela_game
+using System;
+
+public class Bela_Group_Proj
 {
     public static void Main(string[] args)
     {
+        // Read line to see how many hands and multiply by 4 
         string input = Console.ReadLine();
         int space = input.IndexOf(' ');
         int hands = int.Parse(input.Substring(0, space)) * 4;
         char suit = input[space + 1];
         int total = 0;
+
+        //  Loop and determine if suit is dominant or non dominant and add to total 
         for (int x = 0; x < hands; x++)
         {
             string s = Console.ReadLine();
